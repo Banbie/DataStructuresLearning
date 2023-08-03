@@ -2,6 +2,16 @@ package exampleOfDataStructures;
 
 import java.util.Comparator;
 
+class Recursion{
+	public void recursion (int count) {
+		if(count<=0) {
+			System.out.println(".");
+		}else {
+			System.out.println(count+" *");
+			recursion(count-1);
+		}
+	}
+}
 
 class Car implements Comparable<Car> {
 	private String modelName;
@@ -72,6 +82,10 @@ public class Example_230728 {
 		};
 		
 		System.out.println(useMethod.compare(mycar1, mycar2));
+		
+		//순환, 재귀 호출 실습
+		Recursion rec = new Recursion();
+		rec.recursion(4);
 		
 		
 	}
