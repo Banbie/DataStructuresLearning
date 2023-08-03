@@ -43,7 +43,7 @@ class Car implements Comparable<Car> {
 public class Example_230728 {
 
 	public static void main(String[] args) {
-		
+		//Test1
 		//행렬 for문 실습
 		int arrRepeat[] = {4,5,2,3,4,5,6,};
 		
