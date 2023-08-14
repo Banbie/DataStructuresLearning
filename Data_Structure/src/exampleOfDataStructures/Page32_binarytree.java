@@ -1,23 +1,16 @@
 package exampleOfDataStructures;
 
 public class Page32_binarytree {
-	
 	private Node start;
+	public Page32_binarytree() {start=null;}	//생성자
 	
-	public Page32_binarytree() {
-		start=null;
-	}
-	
-	public class Node{
+	public class Node{	//노드(섬) 개별 생성
 		private char name;
 		private Node left, right;
-		public Node(char newIsland, Node lt, Node rt)
-		{
-			name = newIsland; left = lt; right=rt;
-		}
+		public Node(char newIsland, Node lt, Node rt) {name = newIsland; left = lt; right=rt;}
 	}
 	
-	public Node map() {
+	public Node map() {	//노드(섬)간 관계 설정
 		Node n1 = new Node('H', null, null); Node n2 = new Node('F', null, null); 
 		Node n3 = new Node('S', null, null); Node n4 = new Node('U', null, null); 
 		Node n5= new Node('E', null, null); Node n6 = new Node('Z', null, null); 
@@ -33,6 +26,8 @@ public class Page32_binarytree {
 		
 		return n1;
 	}
+	
+	//여기부터
 	
 	public void A_Course(Node n) {
 		if(n!=null) {
