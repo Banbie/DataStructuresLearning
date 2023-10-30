@@ -1,7 +1,5 @@
 package exampleOfDataStructures;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
 
 class Binarytree_test_junit {
